@@ -1,0 +1,10 @@
+# Dead branch in a function with assertions
+def test_function(x, y):
+    assert x != y
+    if x > 0:
+        if x < 0:  # Dead branch
+            return x + y
+        else:
+            return x - y
+    else:
+        return y

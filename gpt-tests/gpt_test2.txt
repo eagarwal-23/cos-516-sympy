@@ -1,0 +1,6 @@
+# Function with two inputs and a conditional.
+def test_function(x, y):
+    if x > y:
+        return x - y
+    else:
+        return y - x

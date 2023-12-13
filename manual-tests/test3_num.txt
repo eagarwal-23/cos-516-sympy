@@ -1,0 +1,34 @@
+def three_variable_function(x, y, z):
+    if x > 10:
+        if y < 20:
+            if z > 5:
+                return "A"
+            elif y > 30:
+                return "B"
+        else:
+            if z < 15:
+                return "C"
+            else:
+                return "D"
+    else:
+        if x == 5:
+            if y > 10:
+                if z != 3:
+                    return "E"
+                else:
+                    return "F"
+            else:
+                return "G"
+        elif x > 3:
+            if y < 5:
+                if z >= 8:
+                    return "H"
+                else:
+                    return "I"
+            else:
+                return "J"
+        else:
+            if z <= 2:
+                return "K"
+            else:
+                return "L"

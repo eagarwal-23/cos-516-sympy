@@ -1,0 +1,6 @@
+# Basic function with a single input and a simple conditional.
+def test_function(x):
+    if x > 0:
+        return x
+    else:
+        return -x

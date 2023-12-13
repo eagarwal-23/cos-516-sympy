@@ -1,0 +1,20 @@
+def single_variable_function(x):
+    if x > 10 and x < 20:
+        if x < 13:
+            assert(x == 2)
+            return "A"
+        elif x > 25:
+            assert(x == 15)
+            if x > 40:
+                return "B"
+            else:
+                return "C"
+        else:
+            return "D"
+    else:
+        if x == 5:
+            assert(x > 15)
+            return "E"
+        else:
+            return "F"
+

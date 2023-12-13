@@ -1,0 +1,12 @@
+# Multi-conditional function with a dead branch
+def test_function(x, y):
+    if x > 0:
+        if y < 0:
+            return x + y
+        else:
+            if x < 0:  # Dead branch
+                return x
+            else:
+                return y
+    else:
+        return x - y

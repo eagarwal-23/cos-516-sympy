@@ -1,0 +1,13 @@
+def two_variable_function(x, y):
+    if x > 10:
+        if y < 5:
+            return x + y
+        else:
+            return x - y
+    elif x == 5:
+        if y > 10:
+            return x * y
+        else:
+            return x / y
+    else:
+        return x ** y

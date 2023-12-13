@@ -1,0 +1,10 @@
+# Handling of multiple inputs with an assertion
+def test_function(a, b, c):
+    assert a > 0
+    if b > a:
+        if c < b:
+            return c
+        else:
+            return b
+    else:
+        return a

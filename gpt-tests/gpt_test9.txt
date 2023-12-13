@@ -1,0 +1,10 @@
+# Function with assertion and nested conditionals
+def test_function(x, y):
+    if x > y:
+        assert x > 0
+        if y != 0:
+            return x / y
+        else:
+            return y - x
+    else:
+        return x * y

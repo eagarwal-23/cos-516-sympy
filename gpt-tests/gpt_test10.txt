@@ -1,0 +1,15 @@
+# Complex scenario with dead branches due to contradictory conditions
+def test_function(x, y):
+    if x > 0:
+        if y > 0:
+            if x < 0:  # Dead branch
+                return x
+            else:
+                return y
+        else:
+            return x + y
+    else:
+        if x > 0:  # Dead branch
+            return x - y
+        else:
+            return y

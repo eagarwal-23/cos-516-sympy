@@ -1,0 +1,9 @@
+# Dead branch due to contradictory conditions
+def test_function(x):
+    if x > 0:
+        if x < 0:  # This is a dead branch
+            return x
+        else:
+            return -x
+    else:
+        return x

@@ -1,0 +1,16 @@
+def nested_conditionals(x):
+    if x > 10:
+        if x == 15:
+            return "A"
+        else:
+            if x < 2:
+                return "B"
+    else:
+        if x > 5:
+            return "C"
+        else:
+            if x == 0:
+                assert(x > 20)
+                return "D"
+            else:
+                return "E"

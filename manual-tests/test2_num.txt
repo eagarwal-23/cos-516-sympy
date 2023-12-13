@@ -1,0 +1,30 @@
+def two_variable_function(x, y):
+    if x > 10 and y < 200:
+        if y < 5:
+            assert(y == 25)
+            return "A"
+        elif y < 10:
+            return "B"
+        else:
+            if x < 15:
+                return "C"
+            else:
+                return "D"
+    else:
+        if x == 5:
+            if y > 10:
+                return "E"
+            elif y == 8:
+                    if x > 15:
+                        return "F"
+                    else:
+                        return "G"
+            else:
+                return "H"
+        elif x > 3:
+            if y == 0:
+                return "I"
+            else:
+                return "J"
+        else:
+            return "K"
