@@ -1,6 +1,6 @@
 # AutoPy: An Automated Test-Case Generation Engine for Python
 
-## Author[s]: 
+## Authors: 
 Eesha Agarwal for COS 516 (Fall 2023) <br />
 Under the guidance and mentorship of Professor Aarti Gupta and Mike He <br />
 Princeton University Department of Computer Science <br />
