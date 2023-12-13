@@ -1,0 +1,18 @@
+I have created an automatic test-case generation engine for Python with the following constraints:
+
+- It only takes a single function as input.
+- The function can have any number of inputs.
+- The function can have conditionals, nested conditionals, and assertions.
+- Only numerical variables are allowed; no loops or other constructs.
+- All the `if` branches should have `else' branches.
+- No program should be shorter than 5 lines.
+- Multiple independent conditions can't exist.
+- The return value does not matter. 
+
+I want you to generate 10 sample programs for me to use to test my test-case generation engine. 
+These programs must adhere to the constraints. Generate a mix of programs where some have assertions that will be violated by the nature of the branch, and some have dead branches/unreachable code, etc. 
+Dead branches will only occur due to contradicting conditions between 'if' statements nested at different levels, i.e., because of the conditions not being satisfiable together.
+No other kind of dead code is tested for.
+
+Give me the specific thing each program tests and the specific programs. 
+Target specific different elements of my engine, starting more basic and building up.
