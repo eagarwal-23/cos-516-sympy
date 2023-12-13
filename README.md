@@ -33,3 +33,42 @@ where testfile.txt is a text file containing the Python program to be analyzed.
 - Indicates whether a branch is satisfiable or represents dead code.
 - For satisfiable branches, it provides test cases.
 - Highlights unreachable code segments and their locations in the source file.
+
+E.g.
+
+`python3 autopy_test_gen.py < manual-tests/test1_num.txt` yields the following output:
+
+```python
+Number of branches: 6
+Branch number: 1
+Branch conditions: ['x > 10 and x < 20', 'x < 13', 'x == 2']
+Branch status: UNSAT with assertion x == 2
+Status: UNSAT with assertion x == 2
+
+Branch number: 2
+Branch conditions: ['x > 10 and x < 20', 'not x < 13', 'x > 25', 'x == 15', 'x > 40']
+Branch status: UNSAT
+Status: Dead Code (UNSAT)
+The condition that caused the dead code: x > 25. Lines 6 - 11 are unreachable.
+
+Branch number: 3
+Branch conditions: ['x > 10 and x < 20', 'not x < 13', 'x > 25', 'x == 15', 'not x > 40']
+Branch status: UNSAT
+Status: Dead Code (UNSAT)
+The condition that caused the dead code: x > 25. Lines 6 - 11 are unreachable.
+
+Branch number: 4
+Branch conditions: ['x > 10 and x < 20', 'not x < 13', 'not x > 25']
+Branch status: SAT
+Test values: {'x': 86}
+
+Branch number: 5
+Branch conditions: ['not (x > 10 and x < 20)', 'x == 5', 'x > 15']
+Branch status: UNSAT with assertion x > 15
+Status: UNSAT with assertion x > 15
+
+Branch number: 6
+Branch conditions: ['not (x > 10 and x < 20)', 'not x == 5']
+Branch status: SAT
+Test values: {'x': 74}
+```
