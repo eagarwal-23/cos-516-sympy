@@ -1,6 +1,7 @@
 # AutoPy: An Automated Test-Case Generation Engine for Python
 
-## Author[s]: Eesha Agarwal, under the guidance and mentorship of Professor Aarti Gupta and Mike He, Princeton University Department of Computer Science for COS 516 (Fall 2023)
+## Author[s]: 
+Eesha Agarwal, under the guidance and mentorship of Professor Aarti Gupta and Mike He, Princeton University Department of Computer Science for COS 516 (Fall 2023)
 
 ## Description
 AutoPy is a constrained automated test-case generation engine for Python. Provided with a function with any number of inputs, AutoPy analyses the different execution paths in the program. The key goals for each path are to 1) generate a set of specific input values which lead to the execution of the given path, 2) check for the possibility of a variety of different errors along the path including assertion violations, uncaught exceptions, and security vulnerabilities, or 3) declare a path to be unsatisfiable, and the corresponding code to be dead/unreachable. Currently, the engine works to automatically generate test cases, check for assertion violations, and identify dead code for a subset of the Python programming language, focusing specifically on support for primitive numerical data types, control flow and nested conditionals, and assertions. Support for loops and detection of non-terminating iterables, more complex data structures, and the usage of external libraries and the integration and composition of functions is excluded.
